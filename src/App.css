@@ -3,3 +3,16 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.list-card{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.title{
+  text-align: center;
+}
