@@ -1,4 +1,5 @@
 import SinglePost from "./SinglePost";
+import Post from '../data/post';
 
 export default function AppMain(){
 
@@ -10,12 +11,14 @@ export default function AppMain(){
                 Il mio blog di cucina
             </h1>
         <section className="list-card">
-        <SinglePost/>
-        <SinglePost/>
-        <SinglePost/>
-        <SinglePost/>
-        <SinglePost/>
-
+        {Post.map(post => <SinglePost 
+        img={post.image} 
+        titolo={post.titolo} 
+        descrizione={post.descrizione}
+        key={post.id}
+        />)}
+        
+        
         </section>
         </main>
     )
