@@ -12,10 +12,11 @@ export default function AppMain(){
             </h1>
         <section className="list-card">
         {Post.map(post => <SinglePost 
-        img={post.image} 
+        /* img={post.image} 
         titolo={post.titolo} 
         descrizione={post.descrizione}
-        avaliable={post.avaliable}
+        avaliable={post.avaliable} */
+        data={post}
         key={post.id}
         />)}
         
