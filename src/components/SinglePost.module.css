@@ -10,6 +10,8 @@
     div h2,
     div p{
         padding: .5rem;
+        display: flex;
+        justify-content: space-between;
     }
 }
 .btn{
@@ -24,4 +26,17 @@
 }
 .btn:active{
     transform: scale(0.95);
+}
+
+.is_avaliable{
+    background-color: green;
+    padding: .3rem .6rem;
+    border-radius: 10px;
+}
+
+.not_avaliable{
+    background-color: red;
+    padding: .3rem .6rem;
+    border-radius: 10px;
+
 }

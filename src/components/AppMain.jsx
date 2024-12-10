@@ -15,6 +15,7 @@ export default function AppMain(){
         img={post.image} 
         titolo={post.titolo} 
         descrizione={post.descrizione}
+        avaliable={post.avaliable}
         key={post.id}
         />)}
         
